@@ -1,0 +1,2 @@
+# snappycylinder_potentialfoam
+cylinder with potentialfoam

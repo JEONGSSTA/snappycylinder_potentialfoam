@@ -9,9 +9,9 @@ Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : potentialFoam -writep
 Date   : Aug 10 2022
-Time   : 13:10:52
+Time   : 16:51:28
 Host   : DESKTOP-HAN8A0P
-PID    : 1230
+PID    : 3056
 I/O    : uncollated
 Case   : /home/jeong/GIT_HUB_files/snappycylinder_potentialfoam/snappy_potential
 nProcs : 1
@@ -45,10 +45,10 @@ Continuity error = 1.21462e-12
 Interpolated velocity error = 3.34633e-16
 
 Calculating approximate pressure field
-DICPCG:  Solving for p, Initial residual = 9.91427e-05, Final residual = 2.57767e-06, No Iterations 2
-DICPCG:  Solving for p, Initial residual = 2.57767e-06, Final residual = 9.68248e-07, No Iterations 2
-DICPCG:  Solving for p, Initial residual = 9.68248e-07, Final residual = 9.68248e-07, No Iterations 0
-DICPCG:  Solving for p, Initial residual = 9.68248e-07, Final residual = 9.68248e-07, No Iterations 0
+DICPCG:  Solving for p, Initial residual = 1, Final residual = 0.044511, No Iterations 3
+DICPCG:  Solving for p, Initial residual = 0.0222748, Final residual = 0.000828235, No Iterations 230
+DICPCG:  Solving for p, Initial residual = 0.000529902, Final residual = 2.45147e-05, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 2.45145e-05, Final residual = 1.17673e-06, No Iterations 24
 ExecutionTime = 0.1 s  ClockTime = 0 s
 
 End

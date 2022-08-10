@@ -9,9 +9,9 @@ Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : ideasUnvToFoam cylinder3d.unv
 Date   : Aug 10 2022
-Time   : 12:53:20
+Time   : 16:51:18
 Host   : DESKTOP-HAN8A0P
-PID    : 1139
+PID    : 3053
 I/O    : uncollated
 Case   : /home/jeong/GIT_HUB_files/snappycylinder_potentialfoam/snappy_potential
 nProcs : 1

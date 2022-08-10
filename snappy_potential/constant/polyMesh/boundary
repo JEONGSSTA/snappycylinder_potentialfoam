@@ -9,59 +9,32 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       dictionary;
-    location    "system";
-    object      fvSolution;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-solvers
-{
-    p
+3
+(
+    inlet
     {
-        solver          PCG;
-        preconditioner  DIC;
-        tolerance       1e-06;
-        relTol          0.05;
+        type            patch;
+        nFaces          24;
+        startFace       9398;
     }
-
-    pFinal
+    outlet
     {
-        $p;
-        relTol          0;
+        type            patch;
+        nFaces          24;
+        startFace       9422;
     }
-
-    U
+    wall
     {
-        solver          smoothSolver;
-        smoother        symGaussSeidel;
-        tolerance       1e-05;
-        relTol          0;
+        type            patch;
+        nFaces          3904;
+        startFace       9446;
     }
-    Phi
-    {
-        solver          GAMG;
-        smoother        DIC;
-	tolerance       1e-06;
-        relTol          0.0;
-    }
-
-}
-
-PISO
-{
-    nCorrectors     2;
-    nNonOrthogonalCorrectors 0;
-    pRefCell        0;
-    pRefValue       0;
-}
-
-potentialFlow
-{
-    nNonOrthogonalCorrectors 3; //nonOrthogonalcorrection made analytical solution similarly.
-}
-
-
-
+)
 
 // ************************************************************************* //

@@ -1,0 +1,69 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : ideasUnvToFoam cylinder3d.unv
+Date   : Aug 10 2022
+Time   : 12:53:20
+Host   : DESKTOP-HAN8A0P
+PID    : 1139
+I/O    : uncollated
+Case   : /home/jeong/GIT_HUB_files/snappycylinder_potentialfoam/snappy_potential
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Processing tag:164
+Starting reading units at line 3.
+l:1
+units:"  SI: Meter (newton)"
+unitType:2
+Unit factors:
+    Length scale       : 1
+    Force scale        : 1
+    Temperature scale  : 1
+    Temperature offset : 273.15
+
+
+Processing tag:2420
+Skipping tag 2420 on line 9
+Skipping section at line 9.
+
+Processing tag:2411
+Starting reading points at line 20.
+Read 2134 points.
+
+Processing tag:2412
+Starting reading cells at line 4291.
+First occurrence of element type 11 for cell 1 at line 4292
+First occurrence of element type 41 for cell 171 at line 4802
+First occurrence of element type 111 for cell 4123 at line 12706
+Read 5687 cells and 3952 boundary faces.
+
+Processing tag:2467
+Starting reading patches at line 24082.
+For group 1 named inlet trying to read 24 patch face indices.
+For group 2 named outlet trying to read 24 patch face indices.
+For group 3 named wall trying to read 3904 patch face indices.
+
+Sorting boundary faces according to group (patch)
+0: inlet is patch
+1: outlet is patch
+2: wall is patch
+
+Constructing mesh with non-default patches of size:
+    inlet	24
+    outlet	24
+    wall	3904
+
+End
+
